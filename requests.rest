@@ -1,0 +1,56 @@
+### Get started
+GET http://localhost:3000/
+
+### Register
+POST http://localhost:3000/users/api/v1/signup
+Content-Type: application/x-www-form-urlencoded
+
+name=zz
+&phone=081313131313
+&email=development@gmail.com
+&password=12345678
+
+### Login
+POST http://localhost:3000/users/api/v1/login
+Content-Type: application/x-www-form-urlencoded
+
+email=development@gmail.com
+&password=12345678
+
+### Get material
+GET http://localhost:3000/materials/api/v1/all
+Content-Type: application/x-www-form-urlencoded
+
+### Get material
+GET http://localhost:3000/materials/api/v1/deletedata
+Content-Type: application/x-www-form-urlencoded
+
+### Add material
+POST http://localhost:3000/materials/api/v1/add
+Content-Type: application/x-www-form-urlencoded
+
+name=zz
+&type_id=1
+&part_number=123
+&condition_id=1
+&quantity=1
+&price=10000
+&color=red
+&comment=zz
+
+### Update material
+PUT http://localhost:3000/materials/api/v1/update?id=11
+Content-Type: application/x-www-form-urlencoded
+
+name=TEST
+&type_id=1
+&part_number=123
+&condition_id=1
+&quantity=1
+&price=10000
+&color=red
+&comment=TEST
+
+### Delete material
+DELETE http://localhost:3000/materials/api/v1/delete?name=zz
+Content-Type: application/x-www-form-urlencoded
